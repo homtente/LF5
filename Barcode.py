@@ -1,5 +1,5 @@
 # Anwendung:    Barcode Eingabe
-# Autor:        Tom Hente
+# Autor:        Tom Hente88
 # Datum:        22.02.2023
 # Version:      1.1
 
@@ -13,9 +13,13 @@ Liste_Zeichenkette_Ausgabe = []
 
 Barcode_Eingabe = str(input("Geben sie den Barcode ein!"))
 
-#Bedingung Barcode Eingabe 
+#Bedingung Barcode  
 
-if Barcode_Eingabe.isalpha():                                               #Wenn Buchstaben in der Eingabe enthalten sind
+if len(Barcode_Eingabe) is not 30:                                          #Wenn Barcode keine 30 Stellen hat 
+
+    print ("Deine Eingabe hat zu wenige Stellen")                           #Gebe aus die Eingabe hat zu wenige Stellen
+
+elif Barcode_Eingabe.isalpha():                                              #Wenn Buchstaben in der Eingabe enthalten sind
 
     print("Fehlercode 1 = String enthält nicht ausschließlich Ziffern")     #Gebe aus "String enthält nicht ausschließlich"
 
