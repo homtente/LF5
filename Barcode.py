@@ -1,5 +1,5 @@
 # Anwendung:    Barcode Eingabe
-# Autor:        Tom Hente88
+# Autor:        Tom Hente
 # Datum:        22.02.2023
 # Version:      1.1
 
